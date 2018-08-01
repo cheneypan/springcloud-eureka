@@ -22,7 +22,7 @@ ribbon:
 
 eureka:
   instance:
-    hostname: discovery
+    hostname: ${ServiceAddress:discovery}
   client:
     register-with-eureka: false
     fetch-registry: false
